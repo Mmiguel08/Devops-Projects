@@ -1,0 +1,39 @@
+# Deploying a Dashboard Website on CentOS Using HTTP Server with Vagrant
+
+## Overview
+This guide walks through setting up a basic web server on CentOS using Vagrant and automatically deploying a dashboard website template via HTTP.
+
+## Prerequisites
+- Vagrant installed on your machine
+- VirtualBox or another Vagrant-compatible hypervisor
+- Basic knowledge of command line and web servers
+
+## Steps
+
+### 1. Configure Vagrantfile
+The `Vagrantfile` is pre-configured with:
+- CentOS Stream 9 box
+- Private network IP: 192.168.56.10
+- 1GB RAM allocation
+- Automated provisioning script that installs Apache HTTP Server, downloads and deploys a dashboard template
+
+### 2. Start the Virtual Machine and Provision
+Run the following command to start the VM and automatically provision the server:
+```bash
+vagrant up
+```
+
+This will:
+- Boot the CentOS VM
+- Install and start Apache HTTP Server
+- Download the dashboard template from Tooplate
+- Extract it to `/var/www/html/`
+
+### 3. Access the Website
+Once provisioning is complete, access your deployed dashboard website at `http://192.168.56.10` in your browser.
+### 4. List of steps and commands
+```bash
+sudo yum install httpd unzip zip -y
+```
+## Conclusion
+Your dashboard website is now running on CentOS with Apache HTTP Server via Vagrant, fully automated through provisioning.
