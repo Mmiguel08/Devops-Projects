@@ -77,6 +77,7 @@ Vagrant.configure("2") do |config|
     mkdir -p /tmp/website
     cd /tmp/website 
     wget -O 2108_dashboard.zip https://www.tooplate.com/download/2108_dashboard.zip 
-    unzip 2108_dashboard.zip -d /var/www/html/
+    unzip 2108_dashboard.zip 
+    mv 2108_dashboard/* /var/www/html/
    SHELL
 end

@@ -35,5 +35,28 @@ Once provisioning is complete, access your deployed dashboard website at `http:/
 ```bash
 sudo yum install httpd unzip zip -y
 ```
+```bash
+sudo systemctl start httpd
+```
+```bash
+sudo systemctl enable httpd
+```
+```bash
+mkdir -p /tmp/website; cd /tmp/website 
+```
+```bash
+mkdir -p /tmp/website; cd /tmp/website 
+```
+
+```bash
+wget -O 2108_dashboard.zip https://www.tooplate.com/download/2108_dashboard.zip
+```
+
+```bash
+ unzip 2108_dashboard.zip 
+```
+```bash
+ mv 2108_dashboard/* /var/www/html/
+```
 ## Conclusion
 Your dashboard website is now running on CentOS with Apache HTTP Server via Vagrant, fully automated through provisioning.
