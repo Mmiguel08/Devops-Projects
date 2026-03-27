@@ -1,12 +1,13 @@
 # Deploying a Dashboard Website on CentOS Using HTTP Server with Vagrant
 
 ## Overview
-This guide walks through setting up a basic web server on CentOS using Vagrant and automatically deploying a dashboard website template via HTTP.
+This guide walks through setting up a basic web server on CentOS using Vagrant and automatically deploying a dashboard website template.
 
 ## Prerequisites
 - Vagrant installed on your machine
 - VirtualBox or another Vagrant-compatible hypervisor
 - Basic knowledge of command line and web servers
+- Basic knowledge of linux command and Network
 
 ## Steps
 
