@@ -78,7 +78,7 @@ Your dashboard website is now running on CentOS with Apache HTTP Server via Vagr
 <img src="deploymentDone.png" alter="Admin PAnel">Admin Panel Website</img>
 <hr>
 
-#VideoRecorded
+# VideoRecorded
 
 <video with="320" height="240" controls>
     <source src="video.mp4" type="video/mp4">
