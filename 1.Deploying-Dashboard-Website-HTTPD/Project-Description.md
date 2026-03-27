@@ -42,7 +42,7 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 ```
 ```bash
-mkdir -p /tmp/website;
+mkdir -p /tmp/website
 ```
 ```bash
 cd /tmp/website 
