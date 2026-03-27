@@ -80,6 +80,7 @@ Your dashboard website is now running on CentOS with Apache HTTP Server via Vagr
 
 # VideoRecorded
 
-<video with="320" height="240" controls>
-    <source src="video.mp4" type="video/mp4">
-</video> 
+<video width="320" height="240" controls>
+    <source src="video.webm" type="video/webm">
+    Seu navegador não suporta o elemento de vídeo.
+</video>
