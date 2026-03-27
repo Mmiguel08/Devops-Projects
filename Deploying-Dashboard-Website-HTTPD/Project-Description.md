@@ -45,18 +45,31 @@ sudo systemctl enable httpd
 mkdir -p /tmp/website; cd /tmp/website 
 ```
 ```bash
-mkdir -p /tmp/website; cd /tmp/website 
+mkdir -p /tmp/website;
+```
+```bash
+cd /tmp/website 
+```
+```bash
+wget https://www.tooplate.com/zip-templates/2108_dashboard.zip
+```
+```bash
+unzip -o 2108_dashboard.zip
+```
+```bash
+cp -r 2108_dashboard/* /var/www/html/
 ```
 
 ```bash
-wget -O 2108_dashboard.zip https://www.tooplate.com/download/2108_dashboard.zip
-```
-
-```bash
- unzip 2108_dashboard.zip 
+ systemctl restart httpd
 ```
 ```bash
- mv 2108_dashboard/* /var/www/html/
+ cd /tmp
+```
+```bash
+ rm -rf /tmp/website
 ```
 ## Conclusion
 Your dashboard website is now running on CentOS with Apache HTTP Server via Vagrant, fully automated through provisioning.
+
+<img src="deploymentDone.png" alter="Admin PAnel">Admin Panel Website</img>

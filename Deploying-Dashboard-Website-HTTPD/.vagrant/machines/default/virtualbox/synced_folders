@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/miguel/Documents/Deploy-Website-Business/Deploying-Dashboard-Website-HTTPD","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
